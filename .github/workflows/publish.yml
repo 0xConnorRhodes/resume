@@ -13,6 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4.1.1
 
-    - name: run a test command
-      run: ls
-    
+    - name: 'install build dependencies'
+      run: |
+        apt update
+        apt install -y groff
