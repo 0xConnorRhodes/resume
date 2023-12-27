@@ -19,10 +19,6 @@ jobs:
     - name: 'compile resume'
       run: make
 
-    - name: 'test env'
-      run: |
-        echo "${{ secrets.TEST }}"
-
     - uses: ryand56/r2-upload-action@latest
       with:
         r2-account-id: ${{ secrets.R2_ACCOUNT_ID }}
