@@ -19,6 +19,12 @@ jobs:
     - name: 'compile resume'
       run: make
 
+    - name: 'test env'
+      run: |
+        echo "public var: ${{ vars.TESTVAR }}"
+        echo "secret 1: ${{ secrets.TEST }}"
+        echo "secret 2: ${{ secrets.secrets.TEST }}"
+
     - uses: ryand56/r2-upload-action@latest
       with:
         r2-account-id: ${{ secrets.R2_ACCOUNT_ID }}
