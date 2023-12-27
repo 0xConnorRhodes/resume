@@ -1,0 +1,5 @@
+.PRINTSTYLE TYPESET
+.TITLE "Hello World Groff Resume"
+.AUTHOR "Connor Rhodes"
+.START
+Hello World
