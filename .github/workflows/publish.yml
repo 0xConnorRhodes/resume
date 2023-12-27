@@ -22,8 +22,10 @@ jobs:
     - name: 'test env'
       run: |
         echo "public var: ${{ vars.TESTVAR }}"
+        echo "public var2: $TESTVAR"
         echo "secret 1: ${{ secrets.TEST }}"
         echo "secret 2: ${{ secrets.secrets.TEST }}"
+        echo "secret 3: $TEST"
 
     - uses: ryand56/r2-upload-action@latest
       with:
