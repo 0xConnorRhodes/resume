@@ -12,9 +12,7 @@ jobs:
     - uses: actions/checkout@v4.1.1
 
     - name: 'install build dependencies'
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y groff
+      run: sudo apt-get install -y groff
 
     - name: 'compile resume'
       run: |
