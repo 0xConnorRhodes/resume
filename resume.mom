@@ -1,5 +1,5 @@
 .PRINTSTYLE TYPESET
-.TITLE "Hello World Groff Resume"
-.AUTHOR "Connor Rhodes"
+.TITLE "Connor Rhodes"
+.AUTHOR "Enterprise Solutions Engineer @ Verkada"
 .START
-Hello World. Additional text to test CI/CD
+Hello World.
